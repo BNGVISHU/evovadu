@@ -1,0 +1,67 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav-brand-style-logo{
+    display: flex; 
+    flex-direction: column; 
+    text-align: right;
+}
+
+.mainLogo-nav-brand{
+    color: rgb(204, 133, 0); 
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: -20px;
+    text-align: center; 
+    text-decoration: none;
+}
+
+
+.subunit-logo-brand-nav{
+    color: red; 
+    font-size: 13px; 
+    font-weight: 400;
+}
+
+.introductory-section-web{
+    background-image: url("./res/lappy-pen.jpg");
+    position: relative;
+    padding: 60px;
+
+
+}
+
+.introductory-section-web h1{
+    font-size: 60px;
+    color: white;
+}
+
+.sub-introductory-text{
+    background-color: rgba(0,0,0,0.4);
+    width: 40%;
+    padding: 20px;
+}
+
+.introductory-section-web p{
+    color: white;
+}
+
+/*
+.introductory-section-web::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 70%, rgba(0,0,0,0.8) 100%);
+    box-shadow: 0 0 80px 40px rgba(0,0,0,0.7) inset;
+    mix-blend-mode: multiply;
+    transition: background 0.5s, box-shadow 0.5s;
+}
+    */
+
+.sub-introductory-text button{
+    font-weight: 600;
+    border-radius: none;
+}
