@@ -1,3 +1,9 @@
+:root{
+    --primary-logo-color :rgb(204, 133, 0);
+    --secondary-color:red;
+}
+
+
 *{
     padding: 0%;
     margin: 0%;
@@ -15,6 +21,49 @@
     }
 }
 
+
+@media screen and (max-width:1024px){
+    .sub-introductory-text{
+        color: red;
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    .introductory-section-web{
+        height: 70vh;
+        padding: 30px !important;
+        text-align: center !important;
+        align-content: center !important;
+    }
+
+    .introductory-section-web h1{
+        font-size: 1.5em !important; 
+        color: var(--primary-logo-color) !important;
+        background-color: rgba(0,0,0,0.5) !important;
+        padding: 3px;
+    }
+
+    .introductory-section-web > p{
+        font-size: 4em !important;
+        
+    }
+
+    .section-to-discover button img{
+        max-width: 160px;
+    }
+
+    .mainLogo-nav-brand{
+        font-size: 2em !important;
+    }
+
+    
+    
+}
+
+nav{
+    width: 100vw;
+}
+
 .nav-brand-style-logo{
     display: flex; 
     flex-direction: column; 
@@ -22,8 +71,8 @@
 }
 
 .mainLogo-nav-brand{
-    color: rgb(204, 133, 0); 
-    font-size: 70px;
+    font-size: 4em;
+    color: var(--primary-logo-color);
     font-weight: 900;
     margin-bottom: -20px;
     text-align: center; 
@@ -39,25 +88,29 @@
 
 .introductory-section-web{
     background-image: url("./res/lappy-pen.jpg");
-    position: relative;
     padding: 60px;
-
-
+    background-size: cover;
+    width: 100vw;
+    box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 .introductory-section-web h1{
-    font-size: 60px;
+    font-size: 4em;
     color: white;
 }
 
 .sub-introductory-text{
     background-color: rgba(0,0,0,0.4);
     width: 40%;
+    height: 100%;
     padding: 20px;
+    overflow: inherit;
 }
 
 .introductory-section-web p{
     color: white;
+    font-size: 1em;
 }
 
 /*
@@ -85,14 +138,16 @@
 
 .section-to-discover {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .section-to-discover button{
     border: none;
-    margin-left:60px;
     margin-top: 15px;
     transition: background-color 0.5s;
+    margin: 20px;
 }
 
 .section-to-discover button:hover {
@@ -130,4 +185,18 @@
 .socials-of-evovadu button:hover{
     background-color: rgb(226, 226, 226);
 
+}
+
+footer{
+    padding: 30px;
+    background-color: rgb(27, 27, 27);
+    color: grey;
+    width: 100vw;
+    box-sizing: border-box;
+    border: none;
+    bottom: 0%;
+}
+
+footer a{
+    text-decoration: none;
 }

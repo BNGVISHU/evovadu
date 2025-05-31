@@ -1,0 +1,78 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.loginTab{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    border: 0.2px solid black;
+}
+
+
+.logoBrandTop{
+    background-color: rgb(29, 29, 29);
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+
+}
+.loginTab h1{
+    color: rgb(204, 133, 0); 
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: -20px;
+}
+
+
+.loginTab p{
+    color: red; 
+    font-size: 10px; 
+    font-weight: 400;
+}
+
+
+
+.loginwithgoogle{
+    justify-content: center ;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.loginwithgoogle button{
+    margin: 15px;
+    font-size: 17px;
+    padding: 13px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}
+
+
+.loginwithgoogle button:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.loginwithgoogle div {
+    font-size: 19px;
+    margin: 6px;
+
+}
+
+.loginwithgoogle div a{
+    text-decoration: none;
+    color: blue;
+}
