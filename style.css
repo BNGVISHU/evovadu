@@ -94,6 +94,7 @@ nav{
     padding: 60px;
     background-size: cover;
     width: 100vw;
+    align-content: center;
     box-sizing: border-box;
     word-wrap: break-word;
 }
