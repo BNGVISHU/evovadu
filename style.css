@@ -45,6 +45,9 @@
 
     .introductory-section-web > p{
         font-size: 4em !important;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
         
     }
 
