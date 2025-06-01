@@ -23,11 +23,24 @@
                 <div class="check2">
                     <input type="checkbox"> I got eyes on <a href="">Disclaimer</a>
                 </div >
-                   <div id="g_id_onload" data-client_id="233970668476-qobrm739ibhca2bqamk26o4putrh9ibl.apps.googleusercontent.com" data-callback="handleCredentialResponse">
+                   <div id="g_id_onload" data-client_id="233970668476-qobrm739ibhca2bqamk26o4putrh9ibl.apps.googleusercontent.com" data-callback="handleCredentialResponse" >
                 </div>
             </div>
         </div>
     </div>
 </body>
  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+ <script>
+function handleCredentialResponse(response) {
+    // Example: decode JWT and show user info (for demonstration)
+    // In production, send the token to your backend for verification
+    const credential = response.credential;
+    // Optionally decode JWT to get user info
+    const payload = JSON.parse(atob(credential.split('.')[1]));
+    alert(`Welcome, ${payload.name || payload.email}!`);
+    // Redirect or update UI as needed
+    // window.location.href = "/dashboard.html";
+}
+ </script>
 </html>
