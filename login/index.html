@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | Evovadu Courses</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <meta name="google-signin-client_id" content="233970668476-qobrm739ibhca2bqamk26o4putrh9ibl.apps.googleusercontent.com">
 </head>
 <body>
     <div class="mainContent">
@@ -23,9 +24,10 @@
                 <div class="check2">
                     <input type="checkbox"> I got eyes on <a href="">Disclaimer</a>
                 </div>
-                <button disabled><img src="../res/icons8-google-48.png" alt="">Log In With Google</button>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
             </div>
         </div>
     </div>
 </body>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 </html>

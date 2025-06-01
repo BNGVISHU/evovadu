@@ -68,9 +68,7 @@
     
 }
 
-nav{
-    width: 100vw;
-}
+
 
 .nav-brand-style-logo{
     display: flex; 
@@ -98,7 +96,6 @@ nav{
     background-image: url("./res/lappy-pen.jpg");
     padding: 60px;
     background-size: cover;
-    width: 100vw;
     align-content: center;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -200,7 +197,6 @@ footer{
     padding: 30px;
     background-color: rgb(27, 27, 27);
     color: grey;
-    width: 100vw;
     box-sizing: border-box;
     border: none;
     bottom: 0%;
