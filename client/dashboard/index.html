@@ -52,12 +52,19 @@
             </div>
             <div class="profieRelated">
                     <button>Settings</button>
-                    <button><img src="../user/51e1c1fc6f50743937e62fca9b942694_t.jpeg" alt="" class="user-profile-image">USERNAME</button>
+                    <button><img src="../user/51e1c1fc6f50743937e62fca9b942694_t.jpeg" alt="" class="user-profile-image" id="main-user-profile">USERNAME</button>
             </div>
 
         </div>
     </div>
 
+<script>
+    fetch("https://evovadu-backend.onrender.com/profile",{
+        credentials : "include"
+    }).then(res => res.json()).then(data =>{
+        document.getElementById("main-user-profile").src = data.profilePicture
+    })
 
+</script>
 </body>
 </html>
