@@ -47,7 +47,7 @@ function handleCredentialResponse(response) {
   .then(data => {
     if (data.success) {
       // Redirect after successful login
-      window.location.href = "./dashboard/";
+      window.location.href = "../dashboard/";
     } else {
       alert("Login failed: " + data.message);
     }

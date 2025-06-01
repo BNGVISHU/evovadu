@@ -61,8 +61,8 @@
 <script>
     fetch("https://evovadu-backend.onrender.com/profile",{
         credentials : "include"
-    }).then(res => res.json()).then(data =>{
-        document.getElementById("main-user-profile").src = data.profilePicture
+    }).then(res => res.json()).then(data => {
+        document.getElementById("main-user-profile").src = data.profilePicture;
     })
 
 </script>
