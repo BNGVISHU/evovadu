@@ -52,7 +52,7 @@
             </div>
             <div class="profieRelated">
                     <button>Settings</button>
-                    <button><img src="../user/51e1c1fc6f50743937e62fca9b942694_t.jpeg" alt="" class="user-profile-image" id="main-user-profile">USERNAME</button>
+                    <button id="username-button-dashbord"><img src="../user/51e1c1fc6f50743937e62fca9b942694_t.jpeg" alt="" class="user-profile-image" id="main-user-profile">USERNAME</button>
             </div>
 
         </div>
@@ -63,6 +63,7 @@
         credentials : "include"
     }).then(res => res.json()).then(data => {
         document.getElementById("main-user-profile").src = data.profilePicture;
+        document.getElementById("username-button-dashbord").innerHTML = data.name;
     })
 
 </script>
