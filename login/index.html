@@ -6,7 +6,6 @@
     <title>Login | Evovadu Courses</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <meta name="google-signin-client_id" content="233970668476-qobrm739ibhca2bqamk26o4putrh9ibl.apps.googleusercontent.com">
 </head>
 <body>
     <div class="mainContent">
@@ -23,11 +22,12 @@
                 </div>
                 <div class="check2">
                     <input type="checkbox"> I got eyes on <a href="">Disclaimer</a>
+                </div >
+                   <div id="g_id_onload" data-client_id="233970668476-qobrm739ibhca2bqamk26o4putrh9ibl.apps.googleusercontent.com" data-callback="handleCredentialResponse">
                 </div>
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
             </div>
         </div>
     </div>
 </body>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+ <script src="https://accounts.google.com/gsi/client" async defer></script>
 </html>
