@@ -31,16 +31,32 @@
 </body>
  <script src="https://accounts.google.com/gsi/client" async defer></script>
 
- <script>
+<script>
 function handleCredentialResponse(response) {
-    // Example: decode JWT and show user info (for demonstration)
-    // In production, send the token to your backend for verification
-    const credential = response.credential;
-    // Optionally decode JWT to get user info
-    const payload = JSON.parse(atob(credential.split('.')[1]));
-    alert(`Welcome, ${payload.name || payload.email}!`);
-    // Redirect or update UI as needed
-    // window.location.href = "/dashboard.html";
+  const token = response.credential;
+
+  fetch('http://localhost:3000/verify-google-token', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    credentials: 'include',  // ⬅️ Important to allow cookies
+    body: JSON.stringify({ token })  // ⬅️ Sending the token
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      // Redirect after successful login
+      window.location.href = data.redirect;
+    } else {
+      alert("Login failed: " + data.message);
+    }
+  })
+  .catch(err => {
+    console.error("Error:", err);
+    alert("Something went wrong");
+  });
 }
- </script>
+</script>
+
 </html>
