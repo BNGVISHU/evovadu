@@ -62,7 +62,7 @@
     fetch("https://evovadu-backend.onrender.com/profile",{
         credentials : "include"
     }).then(res => res.json()).then(data => {
-        console.log(data)
+        refinedData = data['user'].json()
         document.getElementById("main-user-profile").src = data.profilePicture;
         document.getElementById("username-button-dashbord").innerHTML = data.name;
     })
