@@ -63,9 +63,7 @@
     fetch("https://evovadu-backend.onrender.com/profile",{
         credentials : "include"
     }).then(res => res.json()).then(data => {
-        console.log(data['user'].name)
-        document.getElementById("main-user-profile").src = data['user'].profilePicture;
-        document.getElementById("username-button-dashbord").textContent = data['user'].name;
+        document.getElementById("username-button-dashbord").innerHTML = `<img src="${data['user'].profilePicture}" class="user-profile-image" id="main-user-profile" alt="user profile picture" >${data['user'].name}`;
     })
 
 </script>
