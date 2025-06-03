@@ -63,6 +63,7 @@
         credentials : "include"
     }).then(res => res.json()).then(data => {
         refinedData = data['user'].json()
+        console.log(refinedData)
         document.getElementById("main-user-profile").src = data.profilePicture;
         document.getElementById("username-button-dashbord").innerHTML = data.name;
     })
