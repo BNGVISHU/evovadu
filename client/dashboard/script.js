@@ -9,7 +9,7 @@ async function main(){
             }
             else{
                 document.getElementById("username-button-dashbord").innerHTML = `<img src="${data['user'].profilePicture}" class="user-profile-image" id="main-user-profile" alt="user profile picture" >`;
-                document.getElementById("username-button-dashbord").innerHTML = `<img src="${data['user'].profilePicture}" class="user-profile-image" id="main-user-profile-tablet" alt="user profile picture" >`;
+                document.getElementById("username-button-dashbord-mobile").innerHTML = `<img src="${data['user'].profilePicture}" class="user-profile-image" id="main-user-profile-tablet" alt="user profile picture" >`;
             }
             
         })
