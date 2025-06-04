@@ -73,11 +73,13 @@
 
     .show-all-button{
         display: block !important;
+        margin: auto !important;
     
     }
 
     .navigation{
        background-color: var(--bg-colour-main-nav);
+       display: block !important;
        
     }
 
