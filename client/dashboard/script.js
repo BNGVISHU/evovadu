@@ -8,7 +8,7 @@ document.querySelector(".show-all-button").addEventListener("click",()=>{
         mainButtonToggler.style.display = "flex";
         // Force reflow to ensure transition
         void mainNavButton_ID.offsetWidth;
-        mainNavButton_ID.style.marginBottom = "40px";
+        mainNavButton_ID.style.marginBottom = "50px";
     }
     else{
         mainNavButton_ID.style.marginBottom = "-400px";
@@ -36,7 +36,7 @@ async function main(){
         }).then(res => res.json()).then(data => {
             refData = data['user'] // More refined 
             if (data == null){
-                // window.location.href = "../login/index.html"
+                window.location.href = "../login/index.html"
             }
             else{
                 document.getElementById("username-button-dashbord").innerHTML = `<img src="${data['user'].profilePicture}" class="user-profile-image" id="main-user-profile" alt="user profile picture" >`;
@@ -46,7 +46,7 @@ async function main(){
         })
     } catch (error) {
         console.log(`Fetch Failed ${error}`)
-        // window.location.href = "../login/index.html"
+        window.location.href = "../login/index.html"
         
     }
 
