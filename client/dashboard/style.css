@@ -6,7 +6,9 @@
 
 
 
-@media screen and (max-width:991px) {
+/*Handling Device Style*/
+
+@media screen and (max-width:991px) /*tablet device*/ {
     .search-input-box-course{
         display: none !important;
 
@@ -16,7 +18,7 @@
         display: none!important ;
     }
 
-    .main-section-dashboard-evovadu-for-mobile{
+    .main-section-dashboard-evovadu-for-tablet{
         display: flex !important;
         position: fixed !important;
         bottom: 0% !important;
@@ -57,7 +59,7 @@
     }
 }
 
-@media screen and (max-width:639px) {
+@media screen and (max-width:639px) /*mobile device*/ {
     .navigation button{
         display: none ;
     }
@@ -74,6 +76,13 @@
 
 
 }
+
+
+
+
+
+
+/*Navbar*/
 
 nav{
     position: fixed;
@@ -92,39 +101,15 @@ nav{
 
 }
 
-.search-input-box-course {
-    display: flex;
-    flex-direction: row ;
-    justify-content: center;
-    border-radius: 100px;
-    background-color: white;
-    padding: 3px 10px 3px 10px;
-    margin-left: 34vw;
-
-}
-
-.search-input-box-course input{
-    padding: 5px;
-    border: none;
-    text-align: left;
-}
-
-.search-input-box-course button{
-    border: none;
-    background-color: white;
-}
-
-.search-input-box-course input:focus {
-    outline:none;
-
-}
-
 .navbar {
     position: fixed;
     justify-content: center;
     align-items: center;
 }
 
+
+
+/*dasboard related style*/
 .main-section-dashboard-evovadu{
     display: flex;
     flex-direction: row;
@@ -133,6 +118,7 @@ nav{
 
 }
 
+/* navigator style */
 
 .navigator-to-another-section{
     display: flex;
@@ -152,13 +138,6 @@ nav{
 
 }
 
-.user-profile-image{
-    border-radius:100%;
-    max-width: 30%;
-    margin: 5px;
-
-}
-
 
 .navigation button{
     text-align: left;
@@ -168,6 +147,15 @@ nav{
     background-color: rgba(0,0,0,0);
     font-weight: 500;
     transition: background-color 0.5s;
+}
+
+/* profile image style  */
+
+.user-profile-image{
+    border-radius:100%;
+    max-width: 30%;
+    margin: 5px;
+
 }
 
 .profieRelated{
@@ -188,12 +176,14 @@ nav{
 }
 
 
-.main-section-dashboard-evovadu-for-mobile{
+
+/* not media source - dashboard style  */
+
+.main-section-dashboard-evovadu-for-tablet{
     display: none;
 }
 
-
-.user-profile-image-mobile{
+.user-profile-image-tablet{
     display: none;
 }
 
@@ -201,7 +191,6 @@ nav{
     display: none;
 
 }
-
 
 .show-all-button{
     display: none;
