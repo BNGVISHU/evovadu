@@ -4,6 +4,11 @@
 }
 
 
+:root{
+    --bg-colour-main-nav :  rgb(33 37 41);
+}
+
+
 
 
 /*Handling Device Style*/
@@ -20,10 +25,11 @@
 
     .main-section-dashboard-evovadu-for-tablet{
         display: flex !important;
-        position: fixed !important;
+        position: absolute !important;
         bottom: 0% !important;
         width: 100vw !important;
         box-sizing: border-box !important;
+        z-index: 2;
     }
 
     .navigator-to-another-section{
@@ -71,13 +77,20 @@
     }
 
     .navigation{
-       background-color: rgb(33 37 41);
+       background-color: var(--bg-colour-main-nav);
        
+    }
+
+    .mainLogo-nav-brand{
+        font-size: 30px !important;
+    }
+
+    .subunit-logo-brand-nav{
+        font-size: 10px !important;
     }
 
 
 }
-
 
 
 
@@ -211,9 +224,45 @@ nav{
 }
 
 
+
 .navigation button:hover{
 
     background-color: rgb(214, 214, 214);
 
 }   
 
+
+.show-all-button-navigation{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: none;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.mainNavButtonforMobile{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: rgba(33,37,41,0.8);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -400px;
+    transition: margin-bottom 0.3s ease;
+}
+
+
+.mainNavButtonforMobile button{
+    margin: 5px;
+    height: 50px;
+    width: 160px;
+    padding: 5px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(33,37,41,0.3);
+}
