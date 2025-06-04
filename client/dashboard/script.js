@@ -8,7 +8,7 @@ document.querySelector(".show-all-button").addEventListener("click",()=>{
         mainButtonToggler.style.display = "flex";
         // Force reflow to ensure transition
         void mainNavButton_ID.offsetWidth;
-        mainNavButton_ID.style.marginBottom = "50px";
+        mainNavButton_ID.style.marginBottom = "70px";
     }
     else{
         mainNavButton_ID.style.marginBottom = "-400px";
